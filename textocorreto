@@ -1,0 +1,531 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+int notadez(int a){
+	if(a == 5){
+		return printf("\nVOCE FOI MUITO BEM ACERTOU TUDO!!!!\n");
+	}else if(a == 4){
+		return printf("\nVOCE FOI MUITO BEM ACERTOU 4/5 PERGUNTAS\n");
+	}else if(a == 3){
+		return printf("\nVOCE FOI MUITO RAZOAVEL ACERTOU 3/5 PERGUNTAS\n");
+	}else if(a == 2){
+		return printf("\nVOCE FOI MUITO RUIM ACERTOU 2/5 PERGUNTAS\n");
+	}else if(a == 1){
+		return printf("\nVOCE FOI PESSIMO ACERTOU 1/5 PERGUNTAS\n");
+	}else if(a == 0){
+		return printf("\nVOCE ERROU TUDO !!!!!!!!!!!!!!!!!!!!\n");
+	}else{
+    return 0;
+  }
+	
+}
+
+int futebol(){
+	int correta=0, errada=0, resposta, cont=0, a;
+	do {
+		
+			system("cls"); 
+			
+			printf("       ----------BEM VINDO AO QUIZ SOBRE FUTEBOL----------\n\n\n");
+	
+			printf("1 - EM QUE ANO O CAMPEONATO BRASILEIRO PASSOU A SER DISPUTADO POR PONTOS CORRIDOS ?\n\n\n");
+			printf("     1 = 2003\n");
+			printf("     2 = 2002\n");
+			printf("     3 = 2001\n");
+			printf("     4 = 2010\n");
+			
+			printf("\nR: ");
+			scanf("%d", &resposta);
+			
+			if(resposta == 1){
+				correta++;
+			}else if(resposta == 2){
+				errada++;
+			
+			}else if(resposta == 3){
+				errada++;
+			
+			}else if(resposta == 4){
+				errada++;
+			
+			}else{
+				errada++;
+			}
+			printf("\n");
+			printf("2 - QUANTAS RODADAS TEM O CAMPEONATO BRASILEIRO ?\n\n\n");
+			printf("     1 = 39\n");
+			printf("     2 = 20\n");
+			printf("     3 = 38\n");
+			printf("     4 = 40\n");
+			
+			printf("\nR: ");
+			scanf("%d", &resposta);
+			
+			if(resposta == 1){
+				errada++;
+			}else if(resposta == 2){
+				errada++;
+			
+			}else if(resposta == 3){
+				correta++;
+			
+			
+			}else if(resposta == 4){
+				errada++;
+			
+			}else {
+				errada++;
+			}
+			printf("\n");
+			printf("3 - EM QUE PAIS FOI CRIADO O FUTEBOL ?\n\n\n");
+			printf("     1 = FRANCA\n");
+			printf("     2 = BRASIL\n");
+			printf("     3 = ITALIA\n");
+			printf("     4 = INGLATERRA\n");
+			
+			printf("\nR: ");
+			scanf("%d", &resposta);
+			
+			if(resposta == 1){
+				errada++;
+			}else if(resposta == 2){
+				errada++;
+			
+			}else if(resposta == 3){
+					errada++;
+			
+			
+			}else if(resposta == 4){
+				correta++;
+		
+			
+			}else {
+				errada++;
+			}
+			printf("\n");
+			printf("4 - EM QUE CLUBE CRISTIANO RONALDO INICIOU A CARREIRA ?\n\n\n");
+			printf("     1 = BARCELONA\n");
+			printf("     2 = SPORTING LISBOA\n");
+			printf("     3 = PORTO\n");
+			printf("     4 = BENFICA\n");
+			
+			printf("\nR: ");
+			scanf("%d", &resposta);
+			
+			if(resposta == 1){
+				errada++;
+			}else if(resposta == 2){
+				correta++;
+				
+			
+			}else if(resposta == 3){
+					errada++;
+			
+			
+			}else if(resposta == 4){
+					errada++;
+				
+			
+			}else {
+				errada++;
+			}
+			printf("\n");
+			printf("5 - EM QUANTAS EDICOES DA COPA DO MUNDO DA FIFA \n    A SELECAO BRASILEIRA PARTICIPOU  ?\n\n\n");
+			printf("     1 = 20\n");
+			printf("     2 = 19\n");
+			printf("     3 = 32\n");
+			printf("     4 = 21\n");
+			
+			printf("\nR: ");
+			scanf("%d", &resposta);
+			
+			if(resposta == 1){
+				errada++;
+			}else if(resposta == 2){
+					errada++;
+				
+			
+			}else if(resposta == 3){
+					errada++;
+			
+			
+			}else if(resposta == 4){
+				correta++;
+				
+				
+			
+			}else {
+				errada++;
+			}
+			
+		
+	}while(cont!=0);
+	
+	printf("VOCE ACERTOU %d de 5 PERGUNTAS\n", correta);
+	printf("VOCE ERROU %d de 5 PERGUNTAS\n", errada);
+	
+	a = notadez(correta);
+	
+ 
+	
+
+	 return a;
+}
+
+int basquete(){
+	int correta=0, errada=0, resposta, cont=0, a;
+	do {
+		
+			system("cls"); 
+			
+			printf("       ----------BEM VINDO AO QUIZ SOBRE BASQUETE----------\n\n\n");
+	
+			printf("1 - QUANTOS PERIODO TEM UM JOGO DE BASQUETE ?\n\n\n");
+			printf("     1 = 3 PERIODOS\n");
+			printf("     2 = 4 PERIODOS\n");
+			printf("     3 = 5 PERIODOS\n");
+			printf("     4 = 2 PERIODOS\n");
+			
+			printf("\nR: ");
+			scanf("%d", &resposta);
+			
+			if(resposta == 1){
+				errada++;
+			}else if(resposta == 2){
+				correta++;
+				
+			
+			}else if(resposta == 3){
+				errada++;
+			
+			}else if(resposta == 4){
+				errada++;
+			
+			}else{
+				errada++;
+			}
+			printf("\n");
+			printf("2 - QUAL A ALTURA DA CESTA DE BASQUETE ?\n\n\n");
+			printf("     1 = 3,40 METROS DE ALTURA\n");
+			printf("     2 = 4,05 METROS DE ALTURA\n");
+			printf("     3 = 3,05 METROS DE ALTURA\n");
+			printf("     4 = 2,90 METROS DE ALTURA\n");
+			
+			printf("\nR: ");
+			scanf("%d", &resposta);
+			
+			if(resposta == 1){
+				errada++;
+			}else if(resposta == 2){
+				errada++;
+			
+			}else if(resposta == 3){
+				correta++;
+			
+			
+			}else if(resposta == 4){
+				errada++;
+			
+			}else {
+				errada++;
+			}
+			printf("\n");
+			printf("3 - EM QUE ANO FOI CRIADO O BASQUETE ?\n\n\n");
+			printf("     1 = 1891\n");
+			printf("     2 = 1990\n");
+			printf("     3 = 2000\n");
+			printf("     4 = 1782\n");
+			
+			printf("\nR: ");
+			scanf("%d", &resposta);
+			
+			if(resposta == 1){
+				correta++;
+				
+			}else if(resposta == 2){
+				errada++;
+			
+			}else if(resposta == 3){
+					errada++;
+			
+			
+			}else if(resposta == 4){
+				errada++;
+				
+			
+			}else {
+				errada++;
+			}
+			printf("\n");
+			printf("4 - O QUE E O MVP DAS FINAIS ?\n\n\n");
+			printf("     1 = MAIOR PONTUADOR\n");
+			printf("     2 = MELHOR JOGADOR\n");
+			printf("     3 = MAIOR DEFESAS\n");
+			printf("     4 = MAIOR ASSISTENCIAS\n");
+			
+			printf("\nR: ");
+			scanf("%d", &resposta);
+			
+			if(resposta == 1){
+				errada++;
+			}else if(resposta == 2){
+				correta++;
+				
+			
+			}else if(resposta == 3){
+					errada++;
+			
+			
+			}else if(resposta == 4){
+					errada++;
+				
+			
+			}else {
+				errada++;
+			}
+			printf("\n");
+			printf("5 - QUAL E O NOME DO CRIADOR DO BASQUETE  ?\n\n\n"); 
+			printf("     1 = CRISTIANO RONALDO\n");
+			printf("     2 = HARRY KANE\n");
+			printf("     3 = JAMES NAISMITH\n");
+			printf("     4 = LEWANDOWSKI\n");
+			
+			printf("\nR: ");
+			scanf("%d", &resposta);
+			
+			if(resposta == 1){
+				errada++;
+			}else if(resposta == 2){
+					errada++;
+				
+			
+			}else if(resposta == 3){
+					correta++;
+				
+			
+			
+			}else if(resposta == 4){
+			
+					errada++;
+				
+			
+			}else {
+				errada++;
+			}
+			
+		
+	}while(cont!=0);
+	
+	printf("VOCE ACERTOU %d de 5 PERGUNTAS\n", correta);
+	printf("VOCE ERROU %d de 5 PERGUNTAS\n", errada);
+	
+	a = notadez(correta);
+	
+
+  return a;
+
+}
+
+int filmes(){
+		int correta=0, errada=0, resposta, cont=0, a;
+		
+		do{
+		
+		system("cls"); 
+			
+			printf("       ----------BEM VINDO AO QUIZ SOBRE FILMES----------\n\n\n");
+	
+			printf("1 - QUANTOS FILMES TEM A SAGA HARRY POTTER ?\n\n\n");
+			printf("     1 = TEM 9 FILMES!!\n");
+			printf("     2 = TEM 5 FILMES!!\n");
+			printf("     3 = TEM 7 FILMES!!\n");
+			printf("     4 = TEM 8 FILMES!!\n");
+			
+			printf("\nR: ");
+			scanf("%d", &resposta);
+			
+			if(resposta == 1){
+				errada++;
+			}else if(resposta == 2){
+				errada++;
+			
+			}else if(resposta == 3){
+				errada++;
+			
+			}else if(resposta == 4){
+				correta++;
+				
+			
+			}else{
+				errada++;
+			}
+			printf("\n");
+			printf("2 - QUAL O FILME DE MAIOR BILHETERIA ?\n\n\n");
+			printf("     1 = AVATAR\n");
+			printf("     2 = VINGADORES ULTIMATO\n");
+			printf("     3 = TITANIC\n");
+			printf("     4 = LAGOA AZUL\n");
+			
+			printf("\nR: ");
+			scanf("%d", &resposta);
+			
+			if(resposta == 1){
+				errada++;
+			}else if(resposta == 2){
+				correta++;
+				
+			
+			}else if(resposta == 3){
+				errada++;
+			
+			
+			}else if(resposta == 4){
+				errada++;
+			
+			}else {
+				errada++;
+			}
+			printf("\n");
+			printf("3 - EM QUE ANO FOI LANCADO O FILME CORINGA ?\n\n\n");
+			printf("     1 = 2020\n");
+			printf("     2 = 2018\n");
+			printf("     3 = 2024\n");
+			printf("     4 = 2019\n");
+			
+			printf("\nR: ");
+			scanf("%d", &resposta);
+			
+			if(resposta == 1){
+				errada++;
+			}else if(resposta == 2){
+				errada++;
+			
+			}else if(resposta == 3){
+					errada++;
+			
+			
+			}else if(resposta == 4){
+				correta++;
+				
+			
+			}else {
+				errada++;
+			}
+			printf("\n");
+			printf("4 - QUAL E O NOME DO PERSONAGEM PRINCIPAL\n    DO FILMES JOGOS VORAZES ?\n\n\n"); //jennifer lawrence
+
+
+
+			printf("     1 = PEETA MELLARK\n");
+			printf("     2 = KATNISS EVERDEEN\n");
+			printf("     3 = HAYMITCH ABERNATHY\n");
+			printf("     4 = JENNIFER LAWRENCE\n");
+			
+			printf("\nR: ");
+			scanf("%d", &resposta);
+			
+			if(resposta == 1){
+				errada++;
+			}else if(resposta == 2){
+				correta++;
+				
+			
+			}else if(resposta == 3){
+					errada++;
+			
+			
+			}else if(resposta == 4){
+					errada++;
+				
+			
+			}else {
+				errada++;
+			}
+			printf("\n");
+			printf("5 - QUANTOS FILMES TEM A SAGA VELOZES E FURIOSOS  ?\n\n\n");
+			printf("     1 = 4 FILMES!!\n");
+			printf("     2 = 10 FILMES!!\n");
+			printf("     3 = 9 FILMES!!\n");
+			printf("     4 = 8 FILMES!!\n");
+			
+			printf("\nR: ");
+			scanf("%d", &resposta);
+			
+			if(resposta == 1){
+				errada++;
+			}else if(resposta == 2){
+					errada++;
+				
+			
+			}else if(resposta == 3){
+					errada++;
+			
+			
+			}else if(resposta == 4){
+				correta++;
+				
+				
+			
+			}else {
+				errada++;
+			}
+			
+		
+	}while(cont!=0);
+	
+	printf("VOCE ACERTOU %d de 5 PERGUNTAS\n", correta);
+	printf("VOCE ERROU %d de 5 PERGUNTAS\n", errada);
+	
+	a = notadez(correta);
+	
+
+  return a;
+	
+
+}
+int main(int argc, char *argv[]) {
+	int quiz=0;
+
+
+			
+		printf("       -------------------BEM VINDO AO QUIZ-------------------\n\n\n");
+		
+		printf("QUAIS QUIZ VOCE VAI QUERER FAZER ???\n\n");
+		
+		printf("Digite 1: para quiz de FUTEBOL !!\n");
+		printf("Digite 2: para quiz de BASQUETE !!\n");
+		printf("Digite 3: para quiz de FILMES !!\n\n\n");
+		
+		
+		
+			do {
+				scanf("%d", &quiz);
+				
+				switch(quiz){
+				case 1:
+				futebol();
+				break;
+				case 2:
+				basquete();
+				break;
+				case 3:
+				filmes();
+				break;
+			default:
+				printf("\nDIGITO INVALIDO TENTE NOVAMENTE\n");
+       
+			
+			}
+		
+				
+			}while( quiz != 1 && quiz != 2 && quiz != 3);
+			
+			
+	
+		
+	
+	return 0;
+}
